@@ -68,7 +68,5 @@ Areas for Improvement:
 This project is intended for educational and research purposes.
 Users are responsible for complying with Archive.org’s terms of service and applicable laws.
 
-This project is intended for educational and research purposes.
-Users are responsible for complying with Archive.org’s terms of service and applicable laws.
 
 
