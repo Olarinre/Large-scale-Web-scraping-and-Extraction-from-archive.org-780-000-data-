@@ -1,5 +1,6 @@
 
 # Ignore directories for temporary and processed files
+.env
 batch_progress.txt
 identifiers.txt
 processed_identifiers.txt

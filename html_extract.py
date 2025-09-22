@@ -5,23 +5,26 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from dotenv import load_dotenv
+
+load_dotenv()
 
 baseurl = "https://archive.org"
 
 # List of proxies (add your own proxies here)
 PROXIES = [
-    "http://lrhapelm:4b6xk0ttj9oh@142.147.128.250:6750/",
-    "http://lrhapelm:4b6xk0ttj9oh@38.153.148.204:5475/",
-    "http://lrhapelm:4b6xk0ttj9oh@82.26.208.215:5522/",
-    "http://lrhapelm:4b6xk0ttj9oh@192.186.151.16:8517/",
-    "http://lrhapelm:4b6xk0ttj9oh@192.186.172.130:9130/",
-    "http://lrhapelm:4b6xk0ttj9oh@86.38.236.165:6449/",
-    "http://lrhapelm:4b6xk0ttj9oh@142.147.131.242:6142/",
-    "http://lrhapelm:4b6xk0ttj9oh@198.89.123.154:6696/",
-    "http://lrhapelm:4b6xk0ttj9oh@45.249.59.230:6206/",
-    'http://brd-customer-hl_5fd52255-zone-datacenter_proxy3:f8wflj43xbp5@brd.superproxy.io:33335',
-    'http://brd-customer-hl_5fd52255-zone-isp_proxy2:yp4vahdrtdn0@brd.superproxy.io:33335',
-    'http://brd-customer-hl_5fd52255-zone-isp_proxy2-country-ch:yp4vahdrtdn0@brd.superproxy.io:33335'
+    os.getenv("PROXY1"),
+    os.getenv("PROXY2"),
+    os.getenv("PROXY3"),
+    os.getenv("PROXY4"),
+    os.getenv("PROXY5"),
+    os.getenv("PROXY6"),
+    os.getenv("PROXY7"),
+    os.getenv("PROXY8"),
+    os.getenv("PROXY9"),
+    os.getenv("PROXY10"),
+    os.getenv("PROXY11"),
+    os.getenv("PROXY12"),
     #'http://brd-customer-hl_5fd52255-zone-isp_proxy1:ttxz0g85p0da@brd.superproxy.io:33335',
     #'http://brd-customer-hl_5fd52255-zone-datacenter_proxy1:z6m1uccmhk25@brd.superproxy.io:33335',
     #'http://brd-customer-hl_5fd52255-zone-datacenter_proxy2:4z3r3fgk3ipp@brd.superproxy.io:33335'
