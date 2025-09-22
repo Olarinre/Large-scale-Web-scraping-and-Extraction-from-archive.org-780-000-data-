@@ -1,0 +1,7 @@
+
+# Ignore directories for temporary and processed files
+batch_progress.txt
+identifiers.txt
+processed_identifiers.txt
+raw_html/
+extracted_data/
